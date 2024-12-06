@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -29,7 +29,8 @@ const Contact = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
         <div className="w-24 h-1 bg-yellow-500 mx-auto mb-4"></div>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Interested in striking a partnership or do you have any complaint or feedback? Fill the form below
+          Interested in striking a partnership or do you have any complaint or
+          feedback? Fill the form below
         </p>
       </div>
 
@@ -80,17 +81,17 @@ const Contact = () => {
           <div className="md:w-1/3 bg-[#1a1a1a] text-white p-8">
             <div className="h-full flex flex-col justify-center space-y-8">
               <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
-              
+
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-yellow-500 text-xl" />
                 <span>Lotus Address phase 1</span>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <FaPhone className="text-yellow-500 text-xl" />
                 <span>+91 81388 57996</span>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-yellow-500 text-xl" />
                 <span>sales@lotusprivatelimited.in</span>

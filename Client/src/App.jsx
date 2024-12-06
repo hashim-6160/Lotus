@@ -4,7 +4,8 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Components/Footer";
 import Hotels from "./Pages/Hotels";
-import Contact from "./Pages/Contact";
+import HotelDetails from "./Pages/HotelDetails";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   return (
@@ -14,18 +15,14 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route
-              path="/hotels"
-              element={<Hotels />}
-            />
+            <Route path="/hotels" element={<Hotels />} />
+            <Route path="/hotel/:id" element={<HotelDetails />} />
+
             <Route
               path="/services"
               element={<div className="pt-16">Our Services</div>}
             />
-            <Route
-              path="/contact"
-              element={<Contact />}
-            />
+            <Route path="/contact" element={<ContactPage />} />
             <Route
               path="/book"
               element={<div className="pt-16">Book Now</div>}

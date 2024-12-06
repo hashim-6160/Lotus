@@ -88,10 +88,10 @@ const Footer = () => {
             </div>
             <div className="mt-8">
               <p className="text-gray-300 leading-relaxed">
-                Stay connected with us on social media 
+                Stay connected with us on social media
               </p>
               <p className="text-gray-300 leading-relaxed">
-              for updates, special offers, and more.
+                for updates, special offers, and more.
               </p>
             </div>
           </div>
@@ -109,4 +109,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
